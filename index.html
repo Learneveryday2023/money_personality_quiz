@@ -26,38 +26,6 @@
             background-color: #f9fafb;
             color: #4b5563;
         }
-        .ai-response {
-            background-color: #eef2ff;
-            border-left: 4px solid #4f46e5;
-            padding: 1rem;
-            margin-top: 1rem;
-            border-radius: 0.5rem;
-            white-space: pre-wrap; /* This will respect newlines in the AI response */
-        }
-        .gemini-button {
-            background-color: #4f46e5;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .gemini-button:hover {
-            background-color: #4338ca;
-        }
-        .loader {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #4f46e5;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            animation: spin 1s linear infinite;
-            margin-right: 8px;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -100,6 +68,38 @@
                 <p>"คนคนเดียวที่จะดูแลและบริหารเงินของเราได้ดีที่สุดก็คือตัวเราเอง"</p>
             </blockquote>
             <p class="mb-4">ก้าวแรกที่สำคัญที่สุดบนเส้นทางนี้ คือการเลิกชี้นิ้วไปที่สิ่งอื่น แล้วหันกลับมายอมรับว่า **"ชีวิตการเงินของเรา เป็นผลมาจากการตัดสินใจของเราเอง 100%"**</p>
+            <p>ปรมาจารย์ด้านการเงินหลายท่านชี้ให้เห็นถึงกับดักความคิดที่ฉุดรั้งผู้คนไว้กับความจน ซึ่งล้วนมาจากการปฏิเสธความรับผิดชอบ มาดูกันว่ามีอะไรบ้างที่เราต้องกำจัดทิ้ง:</p>
+            <ul class="space-y-4 mt-4">
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-red-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
+                    <div><span class="font-bold">หยุดโทษสิ่งอื่น (Blame):</span> การโทษเศรษฐกิจ โทษโชคชะตา คือการมอบอำนาจควบคุมชีวิตเราให้คนอื่น เมื่อเราเลิกโทษ เราจะเริ่มมองหาทางแก้</div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-red-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
+                    <div><span class="font-bold">หยุดหาข้ออ้าง (Justifying):</span> การพูดว่า "เงินไม่สำคัญ" อาจเป็นเพียงข้ออ้างเพื่อปลอบใจที่เรายังจัดการมันได้ไม่ดีพอ ลองคิดดูว่าถ้าเรามีเงินมากพอ ชีวิตเราจะมีความสุขน้อยลงจริงหรือ?</div>
+                </li>
+                <li class="flex items-start">
+                    <svg class="w-6 h-6 text-red-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
+                    <div><span class="font-bold">หยุดบ่น (Complaining):</span> การบ่นคือการดึงดูดปัญหา คนที่สำเร็จจะมองหาทางออก ไม่ใช่เสียเวลาไปกับการพร่ำบ่น</div>
+                </li>
+            </ul>
+            <div class="action-card p-6 my-6 rounded-lg shadow">
+                <h4 class="font-bold text-lg text-blue-900 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L15.232 5.232z"></path></svg>
+                    Action Time: ลงมือทำทันที!
+                </h4>
+                <p class="text-slate-700 mt-2 mb-4">ลองเปลี่ยนมุมมองจาก "ผู้ถูกกระทำ" เป็น "ผู้ควบคุม" ด้วยคำถามเหล่านี้:</p>
+                <div class="space-y-4">
+                    <div>
+                        <label class="font-bold text-slate-800">1. ที่ผ่านมา มีเรื่องอะไรที่คุณมักจะ "โทษ" สิ่งอื่น?</label>
+                        <div class="w-full bg-white p-2 mt-1 rounded border border-blue-200 h-12"></div>
+                    </div>
+                    <div>
+                        <label class="font-bold text-slate-800">2. ลองเปลี่ยนประโยคนั้นใหม่ ให้เป็นการยอมรับผิดชอบ 100%</label>
+                        <div class="w-full bg-white p-2 mt-1 rounded border border-blue-200 h-12"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Chapter 2 -->
@@ -110,7 +110,7 @@
             </blockquote>
             <p class="mb-4">พฤติกรรมการเงินของเราทุกคนถูกกำกับโดย "บทละครเรื่องเงิน" ที่เราซึมซับมาโดยไม่รู้ตัวตั้งแต่เด็ก ไม่ว่าจะมาจากครอบครัว สื่อ หรือประสบการณ์ตรง ซึ่งบทละครนี้สามารถแบ่งได้ 4 รูปแบบหลัก:</p>
             <div class="grid md:grid-cols-2 gap-4 mt-6">
-                 <div class="bg-white p-4 rounded-lg shadow">
+                <div class="bg-white p-4 rounded-lg shadow">
                     <h4 class="font-bold text-blue-900">1. ผู้หลีกหนีเงิน (Money Avoider)</h4>
                     <p class="text-sm text-slate-600">เชื่อว่าเงินเป็นสิ่งไม่ดี คนรวยคือคนโลภ จึงพยายามใช้เงินให้หมดไปเร็วๆ</p>
                 </div>
@@ -127,14 +127,37 @@
                     <p class="text-sm text-slate-600">รอบคอบเรื่องเงิน มีวินัยสูง แต่ถ้ามากไปอาจไม่กล้าใช้เงินเพื่อโอกาสดีๆ</p>
                 </div>
             </div>
+            <p class="mt-6">การเข้าใจว่าบทละครไหนที่ขับเคลื่อนเราอยู่ จะทำให้เรา "รู้ทัน" และสามารถ "เขียนบทใหม่" ให้ชีวิตการเงินของเราดีขึ้นได้</p>
+             <div class="action-card p-6 my-6 rounded-lg shadow">
+                <h4 class="font-bold text-lg text-blue-900 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L15.232 5.232z"></path></svg>
+                    Action Time: สำรวจบทละครของคุณ
+                </h4>
+                <div class="space-y-4 mt-4">
+                    <div>
+                        <label class="font-bold text-slate-800">1. เมื่อนึกถึงคำว่า "คนรวย" คำแรกที่เข้ามาในหัวของคุณคืออะไร?</label>
+                        <div class="w-full bg-white p-2 mt-1 rounded border border-blue-200 h-12"></div>
+                    </div>
+                     <div>
+                        <label class="font-bold text-slate-800">2. จาก 4 รูปแบบข้างต้น คุณคิดว่าแบบไหนที่ตรงกับคุณมากที่สุด?</label>
+                        <div class="w-full bg-white p-2 mt-1 rounded border border-blue-200 h-12"></div>
+                    </div>
+                </div>
+            </div>
         </section>
-       
+        
         <!-- Chapter 3 -->
         <section class="mb-12">
             <h3 class="text-2xl font-bold text-blue-900 mb-4">บทที่ 3: ศิลปะของคำว่า "พอ" และนิยาม "ความรวย" ในแบบของคุณ</h3>
             <blockquote class="quote p-4 my-4">
                 <p>"ความมั่งคั่งที่แท้จริงไม่ใช่การมีรถสปอร์ต แต่มันคืออิสระที่จะตื่นนอนโดยไม่ต้องกังวลเรื่องค่าใช้จ่าย"</p>
             </blockquote>
+            <p class="mb-4">ในยุคแห่งการเปรียบเทียบ เราจะไม่มีวัน "พอ" เพราะจะมีคนที่ดูดีกว่าเราเสมอ แต่ความมั่งคั่งที่แท้จริงที่ผู้มีปัญญาสอนไว้ ไม่ใช่จำนวนเงินในบัญชี แต่มันคือ **"อิสรภาพ"**</p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-slate-700">
+                <li>อิสระที่จะลาออกจากงานที่ไม่ชอบ</li>
+                <li>อิสระที่จะใช้เวลากับครอบครัว</li>
+                <li>อิสระที่จะเลือกทำในสิ่งที่มีความหมายกับชีวิต</li>
+            </ul>
             <p class="mt-4">ความมั่งคั่งคือการที่คุณควบคุมเวลาในชีวิตของตัวเองได้ ดังนั้น ก่อนจะไปต่อ จงหยุดและนิยาม "ความรวย" ในแบบฉบับของคุณเอง</p>
             <div class="action-card p-6 my-6 rounded-lg shadow">
                 <h4 class="font-bold text-lg text-blue-900 flex items-center">
@@ -143,12 +166,13 @@
                 </h4>
                 <div class="space-y-4 mt-4">
                     <div>
-                        <label for="freedom-def" class="font-bold text-slate-800">1. "อิสรภาพทางการเงิน" สำหรับคุณหมายถึงอะไร?</label>
-                        <textarea id="freedom-def" class="w-full bg-white p-2 mt-1 rounded border border-blue-200 h-24" placeholder="เช่น มีรายได้จากทรัพย์สินเดือนละ 50,000 บาท, มีเวลาอยู่กับครอบครัวเต็มที่..."></textarea>
+                        <label class="font-bold text-slate-800">1. "อิสรภาพทางการเงิน" สำหรับคุณหมายถึงอะไร?</label>
+                        <div class="w-full bg-white p-2 mt-1 rounded border border-blue-200 h-12"></div>
                     </div>
-                    <button id="freedom-coach-btn" class="gemini-button">✨ ขอคำแนะนำจาก AI Coach</button>
-                    <div id="freedom-loader" class="hidden items-center text-slate-600"><div class="loader"></div>กำลังประมวลผล...</div>
-                    <div id="freedom-response" class="hidden ai-response"></div>
+                     <div>
+                        <label class="font-bold text-slate-800">2. เขียนสิ่งที่คุณรู้สึกขอบคุณในชีวิตการเงินของคุณ ณ ปัจจุบัน 3 อย่าง</label>
+                        <div class="w-full bg-white p-2 mt-1 rounded border border-blue-200 h-24"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -159,18 +183,42 @@
             <p class="mt-2 opacity-90">เมื่อความคิดพร้อม ก็ถึงเวลาสร้างเสาหลักทางการเงินที่แข็งแกร่ง เพื่อให้ต่อยอดไปสู่ความมั่งคั่งได้อย่างมั่นคง</p>
         </div>
 
-        <!-- Chapter 4, 5, 6 -->
+        <!-- Chapter 4 -->
         <section class="mb-12">
             <h3 class="text-2xl font-bold text-green-900 mb-4">บทที่ 4: กฎทองข้อแรก: จ่ายให้ตัวเองก่อนเสมอ</h3>
-            <p>กฎทองของความมั่งคั่งคือการกลับสมการเป็น: <strong class="text-green-700">รายได้ - เงินออม = รายจ่าย</strong> ทันทีที่รายได้เข้า ให้โอนอย่างน้อย 10% ไปเก็บในบัญชีเพื่ออนาคตทันที</p>
+            <p class="mb-4">คนส่วนใหญ่ใช้สมการการเงินที่ผิดพลาด: <span class="font-bold">รายได้ - รายจ่าย = เงินออม (ถ้าเหลือ)</span></p>
+            <p>แต่กฎทองของความมั่งคั่งที่สืบทอดมาแต่โบราณคือการกลับสมการเป็น:</p>
+            <div class="text-center bg-white p-4 my-4 rounded-lg shadow-md">
+                <p class="text-2xl font-bold text-green-700">รายได้ - เงินออม = รายจ่าย</p>
+            </div>
+            <p>นี่คือหลักการที่เรียกว่า **"จ่ายให้ตัวเองก่อน (Pay Yourself First)"** หมายความว่า ทันทีที่รายได้เข้ามา สิ่งแรกที่ต้องทำคือการโอนเงินอย่างน้อย 10% ไปเก็บในบัญชีเพื่ออนาคตทันที วิธีนี้จะเปลี่ยนการออมจาก "ความหวัง" ให้กลายเป็น "นิสัย" และสร้างแรงผลักดันให้เราบริหารเงินที่เหลืออย่างมีประสิทธิภาพ</p>
         </section>
+
+        <!-- Chapter 5 -->
         <section class="mb-12">
             <h3 class="text-2xl font-bold text-green-900 mb-4">บทที่ 5: จัดการหนี้สิน: หยุดเลือดที่ไหลไม่หยุด</h3>
-            <p>โฟกัสไปที่การกำจัด "หนี้เสีย" (หนี้บริโภค) ให้เร็วที่สุด เพื่อหยุดการรั่วไหลของเงิน</p>
+            <p class="mb-4">ถ้าการออมคือการเติมน้ำเข้าตุ่ม "หนี้บริโภค" ก็คือรูรั่วขนาดใหญ่ที่คอยดูดเงินและกำลังใจของเราไป เราต้องแยกให้ออกระหว่าง:</p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-slate-700">
+                <li><span class="font-bold">หนี้ดี:</span> หนี้ที่สร้างรายได้ในอนาคต (เช่น กู้ซื้อสินทรัพย์เพื่อการลงทุน)</li>
+                <li><span class="font-bold">หนี้เสีย:</span> หนี้ที่เกิดจากการบริโภค (เช่น หนี้บัตรเครดิต, สินเชื่อส่วนบุคคล)</li>
+            </ul>
+            <p class="mt-4">สำหรับขั้นแรก ให้เราโฟกัสไปที่การกำจัด "หนี้เสีย" ให้เร็วที่สุดด้วยกลยุทธ์ยอดนิยม เช่น การโปะหนี้ที่ดอกเบี้ยสูงสุดก่อน (Avalanche) หรือการปิดหนี้ก้อนเล็กสุดก่อนเพื่อสร้างกำลังใจ (Snowball)</p>
         </section>
+
+        <!-- Chapter 6 -->
         <section class="mb-12">
             <h3 class="text-2xl font-bold text-green-900 mb-4">บทที่ 6: สร้างตาข่ายนิรภัย: บริหารความเสี่ยง</h3>
-            <p>สร้างความปลอดภัยด้วย 1) เงินทุนสำรองฉุกเฉิน 3-6 เดือน และ 2) ประกันพื้นฐานที่จำเป็น (สุขภาพ/ชีวิต)</p>
+            <p class="mb-4">การสร้างความมั่งคั่งโดยไม่มีตาข่ายนิรภัย ก็เหมือนการเดินไต่ลวดโดยไม่มีเบาะรองรับ ซึ่งมีความเสี่ยงอย่างยิ่ง ตาข่ายนิรภัยที่สำคัญมี 2 ส่วนคือ:</p>
+            <div class="grid md:grid-cols-2 gap-4 mt-6">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h4 class="font-bold text-green-900">1. เงินทุนสำรองฉุกเฉิน</h4>
+                    <p class="text-sm text-slate-600">ควรมีเงินสดสำรองสำหรับค่าใช้จ่ายที่จำเป็น 3-6 เดือน เพื่อรับมือเหตุไม่คาดฝัน เช่น ตกงาน หรือเจ็บป่วย โดยไม่ต้องไปกู้หนี้ยืมสิน</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h4 class="font-bold text-green-900">2. ประกันพื้นฐาน</h4>
+                    <p class="text-sm text-slate-600">ประกันไม่ใช่การลงทุน แต่คือ "การโอนย้ายความเสี่ยง" ที่เรารับไม่ไหว เช่น ค่ารักษาพยาบาลหลักล้าน ไปให้บริษัทประกันช่วยดูแล</p>
+                </div>
+            </div>
         </section>
 
         <!-- Part 3: Acceleration -->
@@ -182,171 +230,44 @@
         <!-- Chapter 7 -->
         <section class="mb-12">
             <h3 class="text-2xl font-bold text-purple-900 mb-4">บทที่ 7: ความแตกต่างที่สำคัญที่สุด: ทรัพย์สิน vs หนี้สิน</h3>
-            <p>
-                <strong>ทรัพย์สิน (Asset):</strong> คือทุกสิ่งที่ <span class="text-green-600 font-bold">"ดูดเงินเข้า"</span> กระเป๋าคุณ
-                <br>
-                <strong>หนี้สิน (Liability):</strong> คือทุกสิ่งที่ <span class="text-red-600 font-bold">"ดูดเงินออก"</span> จากกระเป๋าคุณ
-            </p>
-            <p class="mt-2">เป้าหมายของเราคือการนำรายได้ไปซื้อ "ทรัพย์สิน" ให้มากที่สุด</p>
+            <blockquote class="quote p-4 my-4">
+                <p>"คนรวยซื้อทรัพย์สิน ส่วนคนชั้นกลางซื้อหนี้สินที่พวกเขาคิดว่าเป็นทรัพย์สิน"</p>
+            </blockquote>
+            <p class="mb-4">นี่คือบทเรียนที่พลิกชีวิตคนนับล้านทั่วโลก ลองจินตนาการว่ากระเป๋าเงินของคุณมีท่อ 2 ท่อ:</p>
+             <ul class="list-disc list-inside space-y-2 pl-4 text-slate-700">
+                <li><span class="font-bold">ทรัพย์สิน (Asset):</span> คือทุกสิ่งที่ต่อกับท่อ <span class="text-green-600">"ดูดเงินเข้า"</span> กระเป๋าคุณ</li>
+                <li><span class="font-bold">หนี้สิน (Liability):</span> คือทุกสิ่งที่ต่อกับท่อ <span class="text-red-600">"ดูดเงินออก"</span> จากกระเป๋าคุณ</li>
+            </ul>
+            <p class="mt-4">บ้านที่คุณอยู่และต้องผ่อนคือ "หนี้สิน" แต่บ้านอีกหลังที่คุณปล่อยเช่าแล้วได้กำไรคือ "ทรัพย์สิน" เป้าหมายของเราคือการนำรายได้ไปซื้อ "ทรัพย์สิน" ให้มากที่สุด เพื่อให้มันสร้างกระแสเงินสดกลับมาเลี้ยงเรา</p>
         </section>
-       
+        
         <!-- Chapter 8 & 9 Combined -->
         <section class="mb-12">
             <h3 class="text-2xl font-bold text-purple-900 mb-4">บทที่ 8: เปลี่ยนสถานะจาก "ผู้บริโภค" เป็น "ผู้สร้าง"</h3>
-            <p class="mb-4">เส้นทางสู่ความมั่งคั่งที่รวดเร็ว คือการเปลี่ยนจากการเป็น "ผู้ใช้แรงงานแลกเงิน" ไปสู่การเป็น "ผู้สร้างระบบ" ที่แก้ปัญหาให้ผู้คนและทำเงินได้แม้ตอนหลับ</p>
-            <div class="action-card p-6 my-6 rounded-lg shadow">
-                <h4 class="font-bold text-lg text-blue-900 flex items-center">
-                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
-                    Action Time: มองหาโอกาสทางธุรกิจ
-                </h4>
-                 <div class="space-y-4 mt-4">
-                    <div>
-                        <label for="business-idea" class="font-bold text-slate-800">1. ลองระดมสมองหาไอเดียธุรกิจที่ช่วยแก้ปัญหาให้คนอื่น</label>
-                        <textarea id="business-idea" class="w-full bg-white p-2 mt-1 rounded border border-blue-200 h-24" placeholder="เช่น แอปพลิเคชันช่วยหาที่จอดรถ, บริการจัดส่งอาหารเพื่อสุขภาพสำหรับคนทำงาน..."></textarea>
-                    </div>
-                    <button id="business-coach-btn" class="gemini-button">✨ ขอคำแนะนำจาก AI Coach</button>
-                    <div id="business-loader" class="hidden items-center text-slate-600"><div class="loader"></div>กำลังประมวลผล...</div>
-                    <div id="business-response" class="hidden ai-response"></div>
-                </div>
+            <p class="mb-4">เส้นทางสู่ความมั่งคั่งที่รวดเร็ว คือการเปลี่ยนจากการเป็น "ผู้ใช้แรงงานแลกเงิน" และ "ผู้บริโภค" ไปสู่การเป็น "ผู้สร้างระบบ" และ "ผู้ผลิต"</p>
+            <div class="bg-white p-6 rounded-lg shadow mt-6">
+                <h4 class="font-bold text-lg text-purple-900">โมเดลการสร้างรายได้ 4 รูปแบบ</h4>
+                <p class="text-sm text-slate-600 mb-4">คนเราหาเงินได้ 4 วิธีหลัก ซึ่งสะท้อนวิธีคิดที่ต่างกัน:</p>
+                <ol class="list-decimal list-inside space-y-2">
+                    <li><b>ลูกจ้าง (Employee):</b> แลกเวลาเพื่อความมั่นคง</li>
+                    <li><b>ทำธุรกิจส่วนตัว (Self-Employed):</b> แลกทักษะเพื่อความเป็นอิสระ (แต่หยุดทำรายได้หยุด)</li>
+                    <li><b>เจ้าของระบบ/ธุรกิจ (Business Owner):</b> สร้างระบบให้ทำงานแทน เพื่อสร้างรายได้แม้ตอนหลับ</li>
+                    <li><b>นักลงทุน (Investor):</b> ใช้เงินต่อเงิน เพื่อสร้างผลตอบแทน</li>
+                </ol>
+                 <p class="mt-4 font-bold">เป้าหมายคือการย้ายตัวเองจากข้อ 1-2 ไปสู่ข้อ 3-4 ซึ่งก็คือการเปลี่ยนจาก "ผู้บริโภค" เป็น "ผู้สร้าง" นั่นเอง</p>
             </div>
+            <p class="mt-6">การเป็น "ผู้สร้าง" คือการสร้างธุรกิจที่แก้ปัญหาให้ผู้คนในวงกว้าง และสามารถทำงานได้โดยไม่ต้องใช้เวลาของเราตลอดไป เช่น การสร้างซอฟต์แวร์, คอร์สออนไลน์, หรือระบบแฟรนไชส์</p>
         </section>
 
         <!-- Chapter 10 -->
         <section class="mb-12">
             <h3 class="text-2xl font-bold text-purple-900 mb-4">บทที่ 10: พลังของการลงทุน: ให้เงินทำงานแทนคุณ</h3>
-            <p>การลงทุนคือการส่งเงินออมของคุณออกไปทำงานเพื่อหาเงินเพิ่ม สิ่งมหัศจรรย์ที่สุดคือ **"พลังทบต้น"** ที่ทำให้ความมั่งคั่งของคุณเติบโตแบบก้าวกระโดดในระยะยาว</p>
+            <p class="mb-4">ไม่ว่าคุณจะหาเงินมาจากทางไหน ปลายทางสุดท้ายของความมั่งคั่งที่ยั่งยืนคือการเป็น **"นักลงทุน"** การลงทุนคือการส่งเงินออมของคุณออกไปทำงานเพื่อหาเงินเพิ่มกลับมา สิ่งมหัศจรรย์ที่สุดคือ **"พลังทบต้น"** ที่ผลตอบแทนจะกลับมาสร้างผลตอบแทนทับลงไปอีกชั้น ทำให้ความมั่งคั่งของคุณเติบโตแบบก้าวกระโดดในระยะยาว</p>
+            <blockquote class="quote p-4 my-4">
+                <p>"หลักการลงทุนสำหรับมือใหม่: ลงทุนในความรู้ก่อนเสมอ, เริ่มให้เร็วที่สุด, ลงทุนอย่างสม่ำเสมอ และมองเกมยาว"</p>
+            </blockquote>
         </section>
 
         <!-- Part 4: Roadmap -->
         <div class="p-6 bg-yellow-600 text-white rounded-xl mb-12 shadow-lg">
-            <h2 class="text-3xl font-bold">ส่วนที่ 4: สร้างแผนที่สู่เป้าหมาย</h2>
-            <p class="mt-2 opacity-90">ถึงเวลาแล้วที่จะนำความรู้ทั้งหมดมาประกอบร่างสร้างเป็น "แผนที่การเงินส่วนตัว" ของคุณเอง</p>
-        </div>
-
-        <!-- Chapter 11 -->
-        <section class="mb-12">
-            <h3 class="text-2xl font-bold text-yellow-800 mb-4">บทที่ 11: ลงมือเขียนแผนการเงินของคุณ</h3>
-            <p class="mb-6">ความฝันที่ไม่มีแผนการก็เป็นได้แค่ความเพ้อฝัน ลองใช้ Worksheet นี้เพื่อเปลี่ยนเป้าหมายของคุณให้จับต้องได้</p>
-            <div class="action-card p-6 my-6 rounded-lg shadow">
-                 <h4 class="font-bold text-lg text-blue-900 flex items-center">
-                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
-                    Action Time: ร่างแผนการเงินของคุณ
-                </h4>
-                 <div class="space-y-4 mt-4">
-                    <div>
-                        <label for="financial-goals" class="font-bold text-slate-800">1. เขียนเป้าหมายการเงินระยะสั้น, กลาง, และยาวของคุณ</label>
-                        <textarea id="financial-goals" class="w-full bg-white p-2 mt-1 rounded border border-blue-200 h-24" placeholder="ระยะสั้น: ปิดหนี้บัตรเครดิตใน 1 ปี&#10;ระยะกลาง: เก็บเงินดาวน์บ้าน 5 แสนใน 5 ปี&#10;ระยะยาว: มีพอร์ตลงทุน 10 ล้านเพื่อเกษียณ"></textarea>
-                    </div>
-                    <button id="plan-coach-btn" class="gemini-button">✨ ขอคำแนะนำจาก AI Coach</button>
-                    <div id="plan-loader" class="hidden items-center text-slate-600"><div class="loader"></div>กำลังประมวลผล...</div>
-                    <div id="plan-response" class="hidden ai-response"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Conclusion -->
-        <section class="text-center bg-blue-900 text-white p-8 rounded-lg shadow-xl">
-            <h3 class="text-3xl font-bold mb-4">บทสรุป: การเดินทางของคุณเพิ่งเริ่มต้น</h3>
-            <p class="mb-4">คู่มือเล่มนี้ได้มอบทั้งแผนที่ เข็มทิศ และเครื่องมือให้คุณแล้ว แต่สิ่งสำคัญที่สุดที่ไม่มีใครให้คุณได้นอกจากตัวคุณเองก็คือ **"การลงมือทำ"**</p>
-            <p class="font-bold text-xl">จำไว้เสมอว่า คุณคือผู้ควบคุมเกมการเงินของตัวเอง และคุณมีพลังที่จะเปลี่ยนแปลงอนาคตได้นับตั้งแต่วินาทีนี้!</p>
-        </section>
-    </main>
-
-    <script>
-        // --- Gemini API Call Function ---
-        async function getAiAdvice(prompt, outputElementId, loadingElementId, buttonId) {
-            const outputElement = document.getElementById(outputElementId);
-            const loadingElement = document.getElementById(loadingElementId);
-            const buttonElement = document.getElementById(buttonId);
-
-            buttonElement.disabled = true;
-            loadingElement.classList.remove('hidden');
-            loadingElement.classList.add('flex');
-            outputElement.classList.add('hidden');
-            outputElement.textContent = '';
-
-            const apiKey = ""; // Canvas will provide the key
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-           
-            let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
-            const payload = { contents: chatHistory };
-
-            let response;
-            let retries = 3;
-            let delay = 1000;
-
-            for (let i = 0; i < retries; i++) {
-                try {
-                    response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    if (response.ok) {
-                        const result = await response.json();
-                        if (result.candidates && result.candidates.length > 0 &&
-                            result.candidates[0].content && result.candidates[0].content.parts &&
-                            result.candidates[0].content.parts.length > 0) {
-                           
-                            const text = result.candidates[0].content.parts[0].text;
-                            outputElement.textContent = text.trim();
-                            outputElement.classList.remove('hidden');
-                        } else {
-                           outputElement.textContent = 'ขออภัยค่ะ ไม่สามารถรับข้อมูลจาก AI ได้ในขณะนี้';
-                           outputElement.classList.remove('hidden');
-                        }
-                        break; // Success, exit loop
-                    }
-                } catch (error) {
-                    console.error('Fetch error:', error);
-                }
-
-                if (i < retries - 1) {
-                    await new Promise(resolve => setTimeout(resolve, delay));
-                    delay *= 2; // Exponential backoff
-                } else {
-                    outputElement.textContent = 'เกิดข้อผิดพลาดในการเชื่อมต่อกับ AI กรุณาลองใหม่อีกครั้ง';
-                    outputElement.classList.remove('hidden');
-                }
-            }
-
-            loadingElement.classList.add('hidden');
-            loadingElement.classList.remove('flex');
-            buttonElement.disabled = false;
-        }
-
-        // --- Event Listeners ---
-        document.getElementById('freedom-coach-btn').addEventListener('click', () => {
-            const userInput = document.getElementById('freedom-def').value;
-            if (!userInput.trim()) {
-                alert('กรุณากรอกนิยามอิสรภาพทางการเงินของคุณก่อนค่ะ');
-                return;
-            }
-            const prompt = `คุณคือโค้ชการเงินที่ให้กำลังใจและมีวิสัยทัศน์ ผู้ใช้งานได้นิยาม "อิสรภาพทางการเงิน" ของเขาว่า: "${userInput}" \n\nจากนิยามนี้ จงสร้างขั้นตอนแรกที่ทำได้จริง 3 ข้อเล็กๆ เพื่อให้เขาเริ่มเดินทางไปสู่เป้าหมายนี้ได้ทันที และปิดท้ายด้วยประโยคให้กำลังใจที่ทรงพลัง 1 ประโยค ขอคำตอบเป็นภาษาไทย`;
-            getAiAdvice(prompt, 'freedom-response', 'freedom-loader', 'freedom-coach-btn');
-        });
-
-        document.getElementById('business-coach-btn').addEventListener('click', () => {
-            const userInput = document.getElementById('business-idea').value;
-            if (!userInput.trim()) {
-                alert('กรุณากรอกไอเดียธุรกิจของคุณก่อนค่ะ');
-                return;
-            }
-            const prompt = `คุณคือนักวางกลยุทธ์ธุรกิจที่เชี่ยวชาญ ผู้ใช้งานมีไอเดียธุรกิจคือ: "${userInput}" \n\nจงวิเคราะห์ไอเดียนี้สั้นๆ ตามหลัก 3 ข้อคือ 1. ความต้องการของตลาด (Need) 2. การขยายตัว (Scale) 3. การควบคุมได้ (Control) จากนั้นเสนอแนะ 1 วิธีที่จะทำให้ไอเดียนี้แข็งแกร่งขึ้น ขอคำตอบเป็นภาษาไทยในรูปแบบรายการที่ชัดเจน`;
-            getAiAdvice(prompt, 'business-response', 'business-loader', 'business-coach-btn');
-        });
-
-        document.getElementById('plan-coach-btn').addEventListener('click', () => {
-            const userInput = document.getElementById('financial-goals').value;
-             if (!userInput.trim()) {
-                alert('กรุณากรอกเป้าหมายทางการเงินของคุณก่อนค่ะ');
-                return;
-            }
-            const prompt = `คุณคือที่ปรึกษาการเงินที่มีประสบการณ์ ผู้ใช้งานมีเป้าหมายทางการเงินดังนี้: "${userInput}" \n\nจงระบุ 1 ประเด็นที่อาจเป็นอุปสรรคหรือความขัดแย้งที่ซ่อนอยู่ระหว่างเป้าหมายเหล่านี้ และเสนอแนะ 1 วิธีที่จะทำให้แผนการนี้สอดคล้องกันมากขึ้น ปิดท้ายด้วยประโยคให้กำลังใจเพื่อให้เขามีวินัยในการทำตามแผน ขอคำตอบเป็นภาษาไทย`;
-            getAiAdvice(prompt, 'plan-response', 'plan-loader', 'plan-coach-btn');
-        });
-
-    </script>
-</body>
-</html>
+            <h2 class="text-3
