@@ -26,6 +26,23 @@
             background-color: #f9fafb;
             color: #4b5563;
         }
+        /* Style for printing */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .action-card, .quote, .bg-blue-800, .bg-green-800, .bg-purple-800, .bg-yellow-600, .bg-blue-900 {
+                background-color: inherit; /* Use inherited background for printing to show colors */
+            }
+            .shadow-lg, .shadow-md, .shadow {
+                box-shadow: none !important;
+            }
+            .title-gradient {
+                 background: none;
+                -webkit-text-fill-color: #1e3a8a;
+            }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
