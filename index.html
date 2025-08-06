@@ -128,7 +128,7 @@
                 </div>
             </div>
         </section>
-        
+       
         <!-- Chapter 3 -->
         <section class="mb-12">
             <h3 class="text-2xl font-bold text-blue-900 mb-4">บทที่ 3: ศิลปะของคำว่า "พอ" และนิยาม "ความรวย" ในแบบของคุณ</h3>
@@ -189,7 +189,7 @@
             </p>
             <p class="mt-2">เป้าหมายของเราคือการนำรายได้ไปซื้อ "ทรัพย์สิน" ให้มากที่สุด</p>
         </section>
-        
+       
         <!-- Chapter 8 & 9 Combined -->
         <section class="mb-12">
             <h3 class="text-2xl font-bold text-purple-900 mb-4">บทที่ 8: เปลี่ยนสถานะจาก "ผู้บริโภค" เป็น "ผู้สร้าง"</h3>
@@ -267,7 +267,7 @@
 
             const apiKey = ""; // Canvas will provide the key
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
-            
+           
             let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
             const payload = { contents: chatHistory };
 
@@ -288,7 +288,7 @@
                         if (result.candidates && result.candidates.length > 0 &&
                             result.candidates[0].content && result.candidates[0].content.parts &&
                             result.candidates[0].content.parts.length > 0) {
-                            
+                           
                             const text = result.candidates[0].content.parts[0].text;
                             outputElement.textContent = text.trim();
                             outputElement.classList.remove('hidden');
@@ -333,4 +333,20 @@
                 alert('กรุณากรอกไอเดียธุรกิจของคุณก่อนค่ะ');
                 return;
             }
-            const prompt = `ค
+            const prompt = `คุณคือนักวางกลยุทธ์ธุรกิจที่เชี่ยวชาญ ผู้ใช้งานมีไอเดียธุรกิจคือ: "${userInput}" \n\nจงวิเคราะห์ไอเดียนี้สั้นๆ ตามหลัก 3 ข้อคือ 1. ความต้องการของตลาด (Need) 2. การขยายตัว (Scale) 3. การควบคุมได้ (Control) จากนั้นเสนอแนะ 1 วิธีที่จะทำให้ไอเดียนี้แข็งแกร่งขึ้น ขอคำตอบเป็นภาษาไทยในรูปแบบรายการที่ชัดเจน`;
+            getAiAdvice(prompt, 'business-response', 'business-loader', 'business-coach-btn');
+        });
+
+        document.getElementById('plan-coach-btn').addEventListener('click', () => {
+            const userInput = document.getElementById('financial-goals').value;
+             if (!userInput.trim()) {
+                alert('กรุณากรอกเป้าหมายทางการเงินของคุณก่อนค่ะ');
+                return;
+            }
+            const prompt = `คุณคือที่ปรึกษาการเงินที่มีประสบการณ์ ผู้ใช้งานมีเป้าหมายทางการเงินดังนี้: "${userInput}" \n\nจงระบุ 1 ประเด็นที่อาจเป็นอุปสรรคหรือความขัดแย้งที่ซ่อนอยู่ระหว่างเป้าหมายเหล่านี้ และเสนอแนะ 1 วิธีที่จะทำให้แผนการนี้สอดคล้องกันมากขึ้น ปิดท้ายด้วยประโยคให้กำลังใจเพื่อให้เขามีวินัยในการทำตามแผน ขอคำตอบเป็นภาษาไทย`;
+            getAiAdvice(prompt, 'plan-response', 'plan-loader', 'plan-coach-btn');
+        });
+
+    </script>
+</body>
+</html>
